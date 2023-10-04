@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/packs/scarce/BackButtonShop.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/packs/common/Display.gd" type="Script" id=2]
+
+[node name="Card" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Back" type="Control" parent="."]
+margin_left = 47.4663
+margin_top = -662.503
+margin_right = 47.4663
+margin_bottom = -622.503
+rect_scale = Vector2( 2.49813, 2.54128 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackButton" type="Button" parent="Back"]
+margin_left = 681.249
+margin_top = 285.41
+margin_right = 723.249
+margin_bottom = 325.41
+text = "Back"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

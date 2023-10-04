@@ -1,0 +1,13 @@
+[remap]
+
+importer="card.json.importer"
+type="Resource"
+path="res://.import/cards.json-1df1a41c0c6b387c9fbf9dcdfb9af5fe.tres"
+
+[deps]
+
+source_file="res://Scripts/data/cards.json"
+dest_files=[ "res://.import/cards.json-1df1a41c0c6b387c9fbf9dcdfb9af5fe.tres" ]
+
+[params]
+

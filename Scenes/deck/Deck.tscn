@@ -1,0 +1,153 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scripts/controllers/BackButton.gd" type="Script" id=1]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/HarryPotter.webp-c615fa27a6d2f6a731615d9226d3239f.stex"
+
+[sub_resource type="StreamTexture" id=2]
+flags = 4
+load_path = "res://.import/talion.webp-011b93bd42b9e5514ff8b8e070fb0eda.stex"
+
+[sub_resource type="StreamTexture" id=3]
+flags = 4
+load_path = "res://.import/darthvader.png-133e4193572402fe4dc79a45c9cbc511.stex"
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+margin_right = 1920.0
+margin_bottom = 40.0
+rect_scale = Vector2( 1.7642, 24.4014 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Control"]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/CanvasLayer"]
+margin_left = -401.334
+margin_top = -560.99
+margin_right = -361.334
+margin_bottom = -520.99
+rect_scale = Vector2( 2, 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AI" type="Control" parent="Control/CanvasLayer/HBoxContainer"]
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AIButton" type="Button" parent="Control/CanvasLayer/HBoxContainer/AI"]
+margin_left = 344.764
+margin_top = 489.502
+margin_right = 420.764
+margin_bottom = 509.502
+text = "AI"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Harry" type="TextureRect" parent="Control/CanvasLayer/HBoxContainer/AI/AIButton"]
+margin_left = -1.08984
+margin_top = -143.845
+margin_right = 374.91
+margin_bottom = 472.155
+rect_scale = Vector2( 0.242697, 0.309645 )
+texture = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Online" type="Control" parent="Control/CanvasLayer/HBoxContainer"]
+margin_left = 4.0
+margin_right = 4.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OnlineButton" type="Button" parent="Control/CanvasLayer/HBoxContainer/Online"]
+margin_left = 424.812
+margin_top = 490.453
+margin_right = 500.812
+margin_bottom = 510.453
+text = "Online"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Talion" type="TextureRect" parent="Control/CanvasLayer/HBoxContainer/Online/OnlineButton"]
+margin_left = -2.32629
+margin_top = -144.03
+margin_right = 429.674
+margin_bottom = 436.97
+rect_scale = Vector2( 0.124674, 0.139607 )
+texture = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Local" type="Control" parent="Control/CanvasLayer/HBoxContainer"]
+margin_left = 8.0
+margin_right = 8.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LocalButton" type="Button" parent="Control/CanvasLayer/HBoxContainer/Local"]
+margin_left = 504.518
+margin_top = 489.944
+margin_right = 580.518
+margin_bottom = 509.944
+text = "Local"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Darth" type="TextureRect" parent="Control/CanvasLayer/HBoxContainer/Local/LocalButton"]
+margin_left = -1.11133
+margin_top = -143.765
+margin_right = 1087.89
+margin_bottom = 1456.23
+rect_scale = Vector2( 0.0879851, 0.0846407 )
+texture = SubResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Back" type="Control" parent="Control/CanvasLayer/HBoxContainer"]
+margin_left = 12.0
+margin_right = 12.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackButton" type="Button" parent="Control/CanvasLayer/HBoxContainer/Back"]
+margin_left = 647.308
+margin_top = 285.41
+margin_right = 689.308
+margin_bottom = 325.41
+text = "Back"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control" type="Control" parent="Control/CanvasLayer/HBoxContainer"]
+margin_left = 16.0
+margin_right = 16.0
+margin_bottom = 40.0
+
+[node name="Button" type="Button" parent="Control/CanvasLayer/HBoxContainer/Control"]
+margin_right = 12.0
+margin_bottom = 20.0
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -14,4 +14,3 @@ export(int) var damage
 export(int) var health
 export(Texture) var symbol
 export(Texture) var background
-export(String) var rarity

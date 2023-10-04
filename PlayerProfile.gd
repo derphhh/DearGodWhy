@@ -4,6 +4,8 @@ var owned_cards = {}
 
 var currency = 1000  # Starting amount, will be overridden by saved data if available
 
+func get_owned_cards():
+	return owned_cards
 func _ready():
 	load_currency()  # Load the saved currency value when the game starts
 	load_data()

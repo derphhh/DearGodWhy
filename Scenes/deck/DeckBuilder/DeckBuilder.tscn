@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/deck/DeckBuilder/BackButtonDeck.gd" type="Script" id=1]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2( -38.1407, 78.4003 )
+
+[node name="Back" type="Control" parent="."]
+margin_left = 464.699
+margin_top = -507.353
+margin_right = 464.699
+margin_bottom = -467.353
+rect_scale = Vector2( 1.93907, 2.0436 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackButton" type="Button" parent="Back"]
+margin_left = 647.308
+margin_top = 285.41
+margin_right = 689.308
+margin_bottom = 325.41
+text = "Back"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

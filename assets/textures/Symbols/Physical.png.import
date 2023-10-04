@@ -2,11 +2,16 @@
 
 importer="texture"
 type="StreamTexture"
-valid=false
+path="res://.import/Physical.png-50af72242c343d104d3a397988193efe.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
-source_file="res://assets/textures/Images/ben.png"
+source_file="res://assets/textures/Symbols/Physical.png"
+dest_files=[ "res://.import/Physical.png-50af72242c343d104d3a397988193efe.stex" ]
+
 [params]
 
 compress/mode=0

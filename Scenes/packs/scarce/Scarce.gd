@@ -2,7 +2,7 @@ extends Node2D
 
 var card_scene = preload("res://Scenes/ui/Cards.tscn")
 var cards_by_rarity = {
-	"Common": [1, 16, 19, 17, 8, 11, 13, 4],
+	"Common": [1, 16, 19, 21, 17, 8, 11, 13, 4],
 	"Scarce": [2, 10, 12, 20, 7, 5],
 	"Rare": [3, 9, 18],
 	"Legend": [6, 15, 14]

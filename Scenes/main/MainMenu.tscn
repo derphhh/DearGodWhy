@@ -1,10 +1,12 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Scenes/shop/ShopButton.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/main/ClearButton.gd" type="Script" id=2]
 [ext_resource path="res://Scenes/deck/DeckButton.gd" type="Script" id=3]
 [ext_resource path="res://Scripts/controllers/PlayButton.gd" type="Script" id=4]
 [ext_resource path="res://assets/textures/Images/Thanos.webp" type="Texture" id=5]
 [ext_resource path="res://assets/textures/Images/mastercheif.png" type="Texture" id=6]
+[ext_resource path="res://Scenes/main/AddAll.gd" type="Script" id=7]
 [ext_resource path="res://assets/textures/Images/1optimusprime.jpeg" type="Texture" id=8]
 [ext_resource path="res://Scenes/main/DisplayButton.gd" type="Script" id=9]
 [ext_resource path="res://Scenes/main/Counter.gd" type="Script" id=10]
@@ -177,6 +179,38 @@ margin_right = 638.65
 margin_bottom = 397.59
 text = "Add"
 script = ExtResource( 13 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Clear" type="Control" parent="CanvasLayer/HBoxContainer"]
+margin_left = 28.0
+margin_right = 28.0
+margin_bottom = 40.0
+
+[node name="ClearButton" type="Button" parent="CanvasLayer/HBoxContainer/Clear"]
+margin_left = 434.898
+margin_top = 300.773
+margin_right = 446.898
+margin_bottom = 320.773
+text = "Clear"
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AddAll" type="Control" parent="CanvasLayer/HBoxContainer"]
+margin_left = 32.0
+margin_right = 32.0
+margin_bottom = 40.0
+
+[node name="AddAll" type="Button" parent="CanvasLayer/HBoxContainer/AddAll"]
+margin_left = 316.829
+margin_top = 299.972
+margin_right = 328.829
+margin_bottom = 319.972
+text = "Add All"
+script = ExtResource( 7 )
 __meta__ = {
 "_edit_use_anchors_": false
 }

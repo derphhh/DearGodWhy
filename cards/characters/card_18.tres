@@ -1,0 +1,21 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://Resource/CardResource.gd" type="Script" id=1]
+[ext_resource path="res://assets/textures/Symbols/Physical.png" type="Texture" id=2]
+[ext_resource path="res://assets/textures/Images/Ares.png" type="Texture" id=3]
+[ext_resource path="res://assets/textures/backgrounds/Red.jpg" type="Texture" id=4]
+
+[resource]
+script = ExtResource( 1 )
+id = 18
+card_name = "Ares"
+image = ExtResource( 3 )
+cost = 7
+card_type = "God"
+ability1 = "Dodge"
+ability2 = "Parry"
+flavor_ability = ""
+damage = 800
+health = 800
+symbol = ExtResource( 2 )
+background = ExtResource( 4 )

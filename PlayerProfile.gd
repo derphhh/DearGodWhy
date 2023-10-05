@@ -12,7 +12,13 @@ func _ready():
 func add_currency(amount):
 	currency += amount
 	save_currency()  # Save the new currency value
-
+func clear_owned_cards():
+	owned_cards = {}  # Use {} to create an empty dictionary
+	save_data()  # Save the empty owned_cards to file
+func assign_cards_1_to_20():
+	for i in range(1, 22):  # Loop from 1 to 20
+		owned_cards[i] = 1  # Assign one of each card
+	save_data()  # Save the new owned_cards to file
 func spend_currency(amount):
 	if currency >= amount:
 		currency -= amount

@@ -2,17 +2,16 @@
 
 [ext_resource path="res://Scenes/deck/collected/BackButtonDeck.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/deck/collected/collected.gd" type="Script" id=2]
-[ext_resource path="res://Scenes/deck/collected/CardList.gd" type="Script" id=3]
+[ext_resource path="res://Scenes/deck/collected/Main.gd" type="Script" id=3]
 
 [node name="Collected" type="Node2D"]
 script = ExtResource( 2 )
 
 [node name="Back" type="Control" parent="."]
-margin_left = -4.23283
-margin_top = -719.343
-margin_right = -4.23283
-margin_bottom = -679.343
-rect_scale = Vector2( 2.62196, 2.74194 )
+margin_left = 1198.31
+margin_top = -261.809
+margin_right = 1238.31
+margin_bottom = -261.809
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -28,37 +27,57 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="LeftPanel" type="VBoxContainer" parent="."]
+[node name="Main" type="Control" parent="."]
 margin_right = 40.0
 margin_bottom = 40.0
-rect_scale = Vector2( 18.5668, 20.5777 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="CardList" type="ItemList" parent="LeftPanel"]
-margin_right = 40.0
 script = ExtResource( 3 )
-
-[node name="MiddlePanel" type="Control" parent="."]
-margin_left = 752.712
-margin_top = 5.39942
-margin_right = 792.712
-margin_bottom = 45.3994
-rect_scale = Vector2( 14.7456, 27.0916 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="RightPanel" type="VBoxContainer" parent="."]
-margin_left = 1360.45
-margin_top = -2.37834
-margin_right = 1400.45
-margin_bottom = 37.6217
-rect_scale = Vector2( 13.8075, 26.9048 )
+[node name="ScrollContainer" type="ScrollContainer" parent="Main"]
+margin_left = 0.0893097
+margin_top = 23.9748
+margin_right = 400.089
+margin_bottom = 1078.97
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="AbilityDescription" type="RichTextLabel" parent="RightPanel"]
-margin_right = 40.0
+[node name="VBoxContainer" type="VBoxContainer" parent="Main/ScrollContainer"]
+
+[node name="LineEdit" type="LineEdit" parent="Main"]
+margin_right = 400.0
+margin_bottom = 24.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Ability1" type="Label" parent="Main"]
+margin_left = 1415.0
+margin_top = 305.0
+margin_right = 1456.0
+margin_bottom = 336.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Ability2" type="Label" parent="Main"]
+margin_left = 1415.0
+margin_top = 515.0
+margin_right = 1456.0
+margin_bottom = 546.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FlavorAbility" type="Label" parent="Main"]
+margin_left = 1415.0
+margin_top = 725.0
+margin_right = 1456.0
+margin_bottom = 756.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="text_changed" from="Main/LineEdit" to="Main" method="_on_LineEdit_text_changed"]

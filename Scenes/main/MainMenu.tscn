@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Scenes/shop/ShopButton.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/main/ClearButton.gd" type="Script" id=2]
@@ -13,6 +13,11 @@
 [ext_resource path="res://Scenes/main/DisplayCurrency.gd" type="Script" id=11]
 [ext_resource path="res://Scenes/main/MainMenu.gd" type="Script" id=12]
 [ext_resource path="res://Scenes/main/Add.gd" type="Script" id=13]
+[ext_resource path="res://Scenes/main/AddDeck.gd" type="Script" id=14]
+[ext_resource path="res://Scenes/main/DisplayDeck.gd" type="Script" id=15]
+[ext_resource path="res://Scenes/main/ClearDeck.gd" type="Script" id=16]
+[ext_resource path="res://Scenes/main/AddAllDeckButton.gd" type="Script" id=17]
+[ext_resource path="res://Scenes/main/ButtonTest.gd" type="Script" id=18]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 12 )
@@ -211,6 +216,86 @@ margin_right = 328.829
 margin_bottom = 319.972
 text = "Add All"
 script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AddDeck" type="Control" parent="CanvasLayer/HBoxContainer"]
+margin_left = 36.0
+margin_right = 36.0
+margin_bottom = 40.0
+
+[node name="AddDeck" type="Button" parent="CanvasLayer/HBoxContainer/AddDeck"]
+margin_left = 184.248
+margin_top = 302.94
+margin_right = 274.248
+margin_bottom = 322.94
+text = "Add to Deck"
+script = ExtResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DisplayDeck" type="Control" parent="CanvasLayer/HBoxContainer"]
+margin_left = 40.0
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="DisplayDeck" type="Button" parent="CanvasLayer/HBoxContainer/DisplayDeck"]
+margin_left = 184.093
+margin_top = 366.016
+margin_right = 279.093
+margin_bottom = 386.016
+text = "Display Deck"
+script = ExtResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ClearDeck" type="Control" parent="CanvasLayer/HBoxContainer"]
+margin_left = 44.0
+margin_right = 44.0
+margin_bottom = 40.0
+
+[node name="ClearDeck" type="Button" parent="CanvasLayer/HBoxContainer/ClearDeck"]
+margin_left = 188.453
+margin_top = 422.864
+margin_right = 268.453
+margin_bottom = 442.864
+text = "Clear Deck"
+script = ExtResource( 16 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AddAllDeck" type="Control" parent="CanvasLayer/HBoxContainer"]
+margin_left = 48.0
+margin_right = 48.0
+margin_bottom = 40.0
+
+[node name="AddAllDeck" type="Button" parent="CanvasLayer/HBoxContainer/AddAllDeck"]
+margin_left = 176.212
+margin_top = 466.678
+margin_right = 283.212
+margin_bottom = 486.678
+text = "Add all to deck"
+script = ExtResource( 17 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ButtonTest" type="Control" parent="CanvasLayer/HBoxContainer"]
+margin_left = 52.0
+margin_right = 52.0
+margin_bottom = 40.0
+
+[node name="ButtonTest" type="Button" parent="CanvasLayer/HBoxContainer/ButtonTest"]
+margin_left = 208.546
+margin_top = 514.401
+margin_right = 220.546
+margin_bottom = 534.401
+text = "Button Test"
+script = ExtResource( 18 )
 __meta__ = {
 "_edit_use_anchors_": false
 }

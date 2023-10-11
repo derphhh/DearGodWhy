@@ -4,6 +4,19 @@ extends Button
 var ai_arena = preload("res://Scenes/play_area/AI/AIArena.tscn")
 func _ready():
 	connect("pressed", self, "_on_PlayButton_pressed")
+func check_deck_and_start_game(mode: String) -> void:
+	var total_cards = 0
+	
+	# Sum up all cards in the deck
+	for card_count in PlayerProfile.deck.values():
+		total_cards += card_count
+	
+	# Check if total cards are exactly 100
+	if total_cards == 100:
+		print("Starting game in", mode, "mode!")
+		get_tree().change_scene_to(ai_arena)
+	else:
+		print("Deck must contain exactly 100 cards! Currently: ", total_cards)
 
 func _on_PlayButton_pressed():
-	get_tree().change_scene_to(ai_arena)
+	check_deck_and_start_game("ai")

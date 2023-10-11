@@ -1,0 +1,21 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://Resource/CardResource.gd" type="Script" id=1]
+[ext_resource path="res://assets/textures/Symbols/elemental.png" type="Texture" id=2]
+[ext_resource path="res://assets/textures/Images/black_flash.jpg" type="Texture" id=3]
+[ext_resource path="res://assets/textures/backgrounds/Green.jpg" type="Texture" id=4]
+
+[resource]
+script = ExtResource( 1 )
+id = 38
+card_name = "Black Flash"
+image = ExtResource( 3 )
+cost = 4
+card_type = "Monster - Speedster"
+ability1 = "Deathless"
+ability2 = "Rage"
+flavor_ability = "Speedforce"
+damage = 500
+health = 500
+symbol = ExtResource( 2 )
+background = ExtResource( 4 )

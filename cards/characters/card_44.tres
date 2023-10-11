@@ -1,0 +1,21 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://Resource/CardResource.gd" type="Script" id=1]
+[ext_resource path="res://assets/textures/Images/blackbolt.jpg" type="Texture" id=2]
+[ext_resource path="res://assets/textures/backgrounds/Blue.jpg" type="Texture" id=3]
+[ext_resource path="res://assets/textures/Symbols/mystical.svg" type="Texture" id=4]
+
+[resource]
+script = ExtResource( 1 )
+id = 44
+card_name = "Blackbolt"
+image = ExtResource( 2 )
+cost = 4
+card_type = "Inhuman"
+ability1 = "Disintegrate"
+ability2 = "Stun"
+flavor_ability = ""
+damage = 500
+health = 200
+symbol = ExtResource( 4 )
+background = ExtResource( 3 )

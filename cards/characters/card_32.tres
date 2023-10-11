@@ -1,0 +1,21 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://Resource/CardResource.gd" type="Script" id=1]
+[ext_resource path="res://assets/textures/Images/Billy_Butcher.jpg" type="Texture" id=2]
+[ext_resource path="res://assets/textures/backgrounds/Red.jpg" type="Texture" id=3]
+[ext_resource path="res://assets/textures/Symbols/Physical.png" type="Texture" id=4]
+
+[resource]
+script = ExtResource( 1 )
+id = 32
+card_name = "Billy Butcher"
+image = ExtResource( 2 )
+cost = 2
+card_type = "Human"
+ability1 = "Rage"
+ability2 = ""
+flavor_ability = ""
+damage = 200
+health = 300
+symbol = ExtResource( 4 )
+background = ExtResource( 3 )

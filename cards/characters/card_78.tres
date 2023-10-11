@@ -1,0 +1,21 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://Resource/CardResource.gd" type="Script" id=1]
+[ext_resource path="res://assets/textures/Symbols/Stealth.png" type="Texture" id=2]
+[ext_resource path="res://assets/textures/backgrounds/Black.jpg" type="Texture" id=3]
+[ext_resource path="res://assets/textures/Images/darkarcher.jpg" type="Texture" id=4]
+
+[resource]
+script = ExtResource( 1 )
+id = 78
+card_name = "Dark Archer"
+image = ExtResource( 4 )
+cost = 1
+card_type = "Human - Defender"
+ability1 = ""
+ability2 = ""
+flavor_ability = ""
+damage = 100
+health = 300
+symbol = ExtResource( 2 )
+background = ExtResource( 3 )

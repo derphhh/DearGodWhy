@@ -23,10 +23,11 @@ __meta__ = {
 }
 
 [node name="BackButton" type="Button" parent="Back"]
-margin_left = 647.308
+margin_left = 552.064
 margin_top = 285.41
-margin_right = 689.308
+margin_right = 594.064
 margin_bottom = 325.41
+rect_scale = Vector2( 2.16384, 2.43361 )
 text = "Back"
 script = ExtResource( 1 )
 __meta__ = {

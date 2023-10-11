@@ -1,0 +1,21 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://Resource/CardResource.gd" type="Script" id=1]
+[ext_resource path="res://assets/textures/backgrounds/Red.jpg" type="Texture" id=2]
+[ext_resource path="res://assets/textures/Symbols/Physical.png" type="Texture" id=3]
+[ext_resource path="res://assets/textures/Images/deku.jpg" type="Texture" id=4]
+
+[resource]
+script = ExtResource( 1 )
+id = 87
+card_name = "Deku"
+image = ExtResource( 4 )
+cost = 2
+card_type = "Superhuman"
+ability1 = "One For All"
+ability2 = ""
+flavor_ability = ""
+damage = 500
+health = 100
+symbol = ExtResource( 3 )
+background = ExtResource( 2 )

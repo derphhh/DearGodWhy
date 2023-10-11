@@ -47,8 +47,6 @@ var ability_descriptions = {
 	"Branding": "If a character is killed by this card, you take possesion of this card for the remainder of the game",
 	"Imbue": "Add a power to an item card",
 	"Copy": "Copy any card on the battlefield"
-	
-	#... (more abilities and descriptions)
 }
 
 func _ready():

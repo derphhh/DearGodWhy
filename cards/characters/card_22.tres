@@ -1,0 +1,21 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://Resource/CardResource.gd" type="Script" id=1]
+[ext_resource path="res://assets/textures/backgrounds/Blue.jpg" type="Texture" id=2]
+[ext_resource path="res://assets/textures/Symbols/mystical.svg" type="Texture" id=3]
+[ext_resource path="res://assets/textures/Images/asriel.jpg" type="Texture" id=4]
+
+[resource]
+script = ExtResource( 1 )
+id = 22
+card_name = "Asriel Dreemurr"
+image = ExtResource( 4 )
+cost = 7
+card_type = "Monster"
+ability1 = "Blackhole"
+ability2 = "Flame"
+flavor_ability = "Flight"
+damage = 600
+health = 700
+symbol = ExtResource( 3 )
+background = ExtResource( 2 )

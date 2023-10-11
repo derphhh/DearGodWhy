@@ -13,7 +13,7 @@
 [node name="Control" type="Control" parent="."]
 margin_right = 1920.0
 margin_bottom = 40.0
-rect_scale = Vector2( 1.7642, 24.4014 )
+rect_scale = Vector2( 3.03593, 36.9868 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -21,11 +21,11 @@ __meta__ = {
 [node name="CanvasLayer" type="CanvasLayer" parent="Control"]
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control/CanvasLayer"]
-margin_left = -401.334
-margin_top = -560.99
-margin_right = -361.334
-margin_bottom = -520.99
-rect_scale = Vector2( 2, 2 )
+margin_left = -634.806
+margin_top = -868.545
+margin_right = -594.806
+margin_bottom = -828.545
+rect_scale = Vector2( 3.44022, 3.23681 )
 __meta__ = {
 "_edit_use_anchors_": false
 }

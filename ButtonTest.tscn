@@ -1,0 +1,42 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://BackButton.gd" type="Script" id=1]
+[ext_resource path="res://Test.gd" type="Script" id=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="BackButton" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackButton" type="Button" parent="BackButton"]
+margin_left = 1682.03
+margin_top = 34.1527
+margin_right = 1724.03
+margin_bottom = 54.1527
+text = "Back"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Test" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Test" type="Button" parent="Test"]
+margin_left = 170.324
+margin_top = 163.624
+margin_right = 245.324
+margin_bottom = 183.624
+text = "Draw card"
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

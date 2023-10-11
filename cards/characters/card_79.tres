@@ -1,0 +1,21 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://Resource/CardResource.gd" type="Script" id=1]
+[ext_resource path="res://assets/textures/Symbols/elemental.png" type="Texture" id=2]
+[ext_resource path="res://assets/textures/backgrounds/Black.jpg" type="Texture" id=3]
+[ext_resource path="res://assets/textures/Images/darkseid-justice-league.png" type="Texture" id=4]
+
+[resource]
+script = ExtResource( 1 )
+id = 79
+card_name = "Darkseid"
+image = ExtResource( 4 )
+cost = 6
+card_type = "God"
+ability1 = "Disintegrate"
+ability2 = "Flame"
+flavor_ability = "Teleportation"
+damage = 900
+health = 1000
+symbol = ExtResource( 2 )
+background = ExtResource( 3 )

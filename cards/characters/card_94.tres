@@ -1,0 +1,21 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://Resource/CardResource.gd" type="Script" id=1]
+[ext_resource path="res://assets/textures/Images/doge.jpg" type="Texture" id=2]
+[ext_resource path="res://assets/textures/Symbols/Psychic.svg" type="Texture" id=3]
+[ext_resource path="res://assets/textures/backgrounds/GoldAllColor.jpg" type="Texture" id=4]
+
+[resource]
+script = ExtResource( 1 )
+id = 94
+card_name = "Dodge"
+image = ExtResource( 2 )
+cost = 1
+card_type = "Meme"
+ability1 = "Meme"
+ability2 = ""
+flavor_ability = ""
+damage = 200
+health = 200
+symbol = ExtResource( 3 )
+background = ExtResource( 4 )

@@ -2,6 +2,10 @@ extends Node
 
 var owned_cards = {}
 
+<<<<<<< Updated upstream
+=======
+signal cards_updated
+>>>>>>> Stashed changes
 var currency = 1000  # Starting amount, will be overridden by saved data if available
 
 func get_owned_cards():

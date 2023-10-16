@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scenes/play_area/AI/GameController.gd" type="Script" id=1]
 [ext_resource path="res://assets/textures/Images/magic.webp" type="Texture" id=2]
-[ext_resource path="res://Scenes/play_area/AI/DrawCardButton.gd" type="Script" id=3]
+[ext_resource path="res://Scenes/play_area/AI/AI.gd" type="Script" id=3]
+[ext_resource path="res://Scenes/play_area/AI/BackButtonPlay.gd" type="Script" id=4]
 
 [node name="Node2D" type="Node2D"]
 position = Vector2( -7.49153, -1.87288 )
@@ -61,14 +62,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="BlockInput" type="Control" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
-rect_scale = Vector2( 25.601, 15.0316 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="EndTurnButton" type="Button" parent="."]
 margin_left = 924.351
 margin_top = 568.503
@@ -80,11 +73,22 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="HandArea" type="Node2D" parent="."]
-position = Vector2( -82.9245, -0.388993 )
-scale = Vector2( 1.19047, 0.992443 )
+[node name="DrawCardButton" type="Button" parent="."]
+margin_left = 63.9497
+margin_top = 571.32
+margin_right = 153.95
+margin_bottom = 591.32
+rect_scale = Vector2( 0.55, 0.84 )
+text = "Draw Card "
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="ColorRect" type="ColorRect" parent="HandArea"]
+[node name="HandArea" type="Node2D" parent="DrawCardButton"]
+position = Vector2( -267.044, -680.606 )
+scale = Vector2( 2.16449, 1.18148 )
+
+[node name="ColorRect" type="ColorRect" parent="DrawCardButton/HandArea"]
 margin_left = 195.831
 margin_top = 410.553
 margin_right = 234.831
@@ -95,14 +99,98 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="DrawCardButton" type="Button" parent="."]
-margin_left = 63.9497
-margin_top = 571.32
-margin_right = 153.95
-margin_bottom = 591.32
+[node name="BlockInput" type="Control" parent="."]
+margin_right = 47.0
+margin_bottom = 43.0
+rect_scale = Vector2( 25.601, 15.0316 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2( 269.496, 8.62911 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 3 )
+
+[node name="AILibrary" type="Node2D" parent="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="Node2D/AILibrary"]
+position = Vector2( 85.6217, 93.8726 )
+rotation = 3.14159
+scale = Vector2( 0.554725, 0.6 )
+texture = ExtResource( 2 )
+
+[node name="AIGraveyard" type="Node2D" parent="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="Node2D/AIGraveyard"]
+position = Vector2( 950.327, 93.8789 )
+rotation = 3.14159
+scale = Vector2( 0.555, 0.6 )
+texture = ExtResource( 2 )
+
+[node name="AIDrawCardButton" type="Button" parent="Node2D"]
+margin_left = 971.625
+margin_top = 13.0719
+margin_right = 1061.62
+margin_bottom = 33.0719
+rect_rotation = -180.0
 rect_scale = Vector2( 0.55, 0.84 )
 text = "Draw Card "
-script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HandArea" type="Node2D" parent="Node2D/AIDrawCardButton"]
+position = Vector2( -267.044, -680.606 )
+scale = Vector2( 2.16449, 1.18148 )
+
+[node name="ColorRect" type="ColorRect" parent="Node2D/AIDrawCardButton/HandArea"]
+margin_left = 195.831
+margin_top = 410.553
+margin_right = 234.831
+margin_bottom = 450.553
+rect_scale = Vector2( 16.0109, 4.24523 )
+color = Color( 0.223529, 0.0156863, 0.0156863, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AIEndTurnButton" type="Button" parent="Node2D"]
+margin_left = 113.814
+margin_top = 12.2529
+margin_right = 203.813
+margin_bottom = 32.2529
+rect_rotation = 180.0
+rect_scale = Vector2( 0.55, 0.84 )
+text = "End Turn"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BlockInput" type="Control" parent="Node2D"]
+margin_left = 35.8328
+margin_top = 222.583
+margin_right = 82.8328
+margin_bottom = 265.583
+rect_scale = Vector2( 21.5139, 4.59626 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackButton" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackButton" type="Button" parent="BackButton"]
+margin_left = 982.577
+margin_top = 2.26838
+margin_right = 1024.58
+margin_bottom = 22.2684
+text = "Back"
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -110,3 +198,5 @@ __meta__ = {
 [connection signal="timeout" from="CountdownTimer" to="." method="_on_CountdownTimer_timeout"]
 [connection signal="timeout" from="StartDisplayTimer" to="." method="_on_StartDisplayTimer_timeout"]
 [connection signal="pressed" from="DrawCardButton" to="." method="_on_DrawCardButton_pressed"]
+[connection signal="pressed" from="Node2D/AIDrawCardButton" to="Node2D" method="_on_AIDrawCardButton_pressed"]
+[connection signal="pressed" from="Node2D/AIEndTurnButton" to="." method="_on_AIEndTurnButton_pressed"]

@@ -30,6 +30,7 @@ Global="*res://AutoLoad/Global.gd"
 CardResource="*res://Resource/CardResource.gd"
 PlayerProfile="*res://PlayerProfile.gd"
 GameLogic="*res://GameLogic.gd"
+AIProfile="*res://AIProfile.gd"
 
 [display]
 

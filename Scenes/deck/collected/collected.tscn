@@ -1,14 +1,8 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scenes/deck/collected/BackButtonDeck.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/deck/collected/collected.gd" type="Script" id=2]
 [ext_resource path="res://Scenes/deck/collected/Main.gd" type="Script" id=3]
-[ext_resource path="res://assets/fonts/OpenSans-Regular.ttf" type="DynamicFontData" id=4]
-[ext_resource path="res://assets/fonts/comicSans.tres" type="DynamicFont" id=5]
-
-[sub_resource type="DynamicFont" id=1]
-size = 20
-font_data = ExtResource( 4 )
 
 [node name="Collected" type="Node2D"]
 script = ExtResource( 2 )
@@ -23,11 +17,10 @@ __meta__ = {
 }
 
 [node name="BackButton" type="Button" parent="Back"]
-margin_left = 552.064
+margin_left = 647.308
 margin_top = 285.41
-margin_right = 594.064
+margin_right = 689.308
 margin_bottom = 325.41
-rect_scale = Vector2( 2.16384, 2.43361 )
 text = "Back"
 script = ExtResource( 1 )
 __meta__ = {
@@ -43,10 +36,10 @@ __meta__ = {
 }
 
 [node name="ScrollContainer" type="ScrollContainer" parent="Main"]
-margin_left = 0.114014
-margin_top = 38.0176
-margin_right = 400.114
-margin_bottom = 1093.01
+margin_left = 0.0893097
+margin_top = 23.9748
+margin_right = 400.089
+margin_bottom = 1078.97
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -56,40 +49,33 @@ __meta__ = {
 [node name="LineEdit" type="LineEdit" parent="Main"]
 margin_right = 400.0
 margin_bottom = 24.0
-custom_fonts/font = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Ability1" type="Label" parent="Main"]
-margin_left = 1308.37
-margin_top = 209.591
-margin_right = 1908.37
-margin_bottom = 243.591
-custom_fonts/font = ExtResource( 5 )
-autowrap = true
+margin_left = 1415.0
+margin_top = 305.0
+margin_right = 1456.0
+margin_bottom = 336.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Ability2" type="Label" parent="Main"]
-margin_left = 1308.37
-margin_top = 419.591
-margin_right = 1908.37
-margin_bottom = 453.591
-custom_fonts/font = ExtResource( 5 )
-autowrap = true
+margin_left = 1415.0
+margin_top = 515.0
+margin_right = 1456.0
+margin_bottom = 546.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="FlavorAbility" type="Label" parent="Main"]
-margin_left = 1308.37
-margin_top = 629.591
-margin_right = 1908.37
-margin_bottom = 663.591
-custom_fonts/font = ExtResource( 5 )
-autowrap = true
+margin_left = 1415.0
+margin_top = 725.0
+margin_right = 1456.0
+margin_bottom = 756.0
 __meta__ = {
 "_edit_use_anchors_": false
 }

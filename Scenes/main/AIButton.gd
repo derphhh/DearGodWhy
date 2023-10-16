@@ -12,7 +12,7 @@ func check_player_deck_and_start_game(mode: String) -> void:
 		print("Starting game in ", mode, " mode!")
 		get_tree().change_scene_to(ai_arena)
 	else:
-		print("Deck must contain exactly 100 cards! Currently: ", total_cards)
+		print("AI Deck must contain exactly 100 cards! Currently: ", total_cards)
 func check_ai_deck_and_start_game(mode: String) -> void:
 	var total_cards = 0
 	for card_count in AIProfile.aideck.values():

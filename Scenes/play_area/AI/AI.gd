@@ -30,7 +30,13 @@ func _on_AIDrawCardButton_pressed():
 			print("Failed to summon card due to invalid data")
 	else:
 		print("No cards left to draw or hand is full!")
-
+func return_ai_cards_to_deck():
+	for card_id in aihand:
+		if aideck.has(card_id):
+			aideck[card_id] += 1
+		else:
+			aideck[card_id] = 1
+	aihand.clear()
 func summon_card(card_data):
 	var card_instance = card_scene.instance()
 
@@ -55,11 +61,6 @@ func summon_card(card_data):
 	card_instance.set_flavorability(card_data.flavor_ability)
 	card_instance.set_damage(card_data.damage)
 
-	card_instance.connect("mouse_entered", self, "_on_card_mouse_entered", [card_instance])
-	card_instance.connect("mouse_exited", self, "_on_card_mouse_exited", [card_instance])
 
-func _on_card_mouse_entered(card_instance):
-	card_instance.scale = card_instance.scale * 1.2
-
-func _on_card_mouse_exited(card_instance):
-	card_instance.scale = card_instance.scale / 1.2
+func _on_BackButton_pressed():
+	return_ai_cards_to_deck()

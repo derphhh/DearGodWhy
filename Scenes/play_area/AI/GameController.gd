@@ -7,6 +7,7 @@ var graveyard = []
 var card_positions = [ Vector2(400, 265), Vector2(295, 265), Vector2(190, 265), Vector2(85, 265), Vector2(-20, 265), Vector2(-125, 265), Vector2(-230, 265)]
 onready var card_scene = preload("res://Scenes/ui/Cards.tscn")
 var card_instances = []  # Store references to card instances here
+
 func _ready():
 	$EndTurnButton.connect("pressed", self, "_on_EndTurnButton_pressed")
 	connect("pressed", self, "_on_DrawCardButton_pressed")
@@ -34,7 +35,13 @@ func _on_DrawCardButton_pressed():
 			print("Failed to summon card due to invalid data")
 	else:
 		print("No cards left to draw or hand is full!")
-
+func return_cards_to_deck():
+	for card_id in hand:
+		if deck.has(card_id):
+			deck[card_id] += 1
+		else:
+			deck[card_id] = 1
+	hand.clear()
 func summon_card(card_data):
 	var card_instance = card_scene.instance()
 
@@ -84,3 +91,7 @@ func _on_StartDisplayTimer_timeout():
 	$BlockInput.visible = false
 
 
+
+
+func _on_BackButton_pressed():
+	return_cards_to_deck()

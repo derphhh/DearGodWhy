@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-[gd_scene load_steps=14 format=2]
-=======
 [gd_scene load_steps=22 format=2]
->>>>>>> Stashed changes
 
 [ext_resource path="res://Scenes/shop/ShopButton.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/main/ClearButton.gd" type="Script" id=2]
@@ -17,8 +13,6 @@
 [ext_resource path="res://Scenes/main/DisplayCurrency.gd" type="Script" id=11]
 [ext_resource path="res://Scenes/main/MainMenu.gd" type="Script" id=12]
 [ext_resource path="res://Scenes/main/Add.gd" type="Script" id=13]
-<<<<<<< Updated upstream
-=======
 [ext_resource path="res://Scenes/main/AddDeck.gd" type="Script" id=14]
 [ext_resource path="res://Scenes/main/DisplayDeck.gd" type="Script" id=15]
 [ext_resource path="res://Scenes/main/ClearDeck.gd" type="Script" id=16]
@@ -27,7 +21,6 @@
 [ext_resource path="res://Scenes/main/AddAllDeckAI.gd" type="Script" id=19]
 [ext_resource path="res://Scenes/main/AddAllAi.gd" type="Script" id=20]
 [ext_resource path="res://Scenes/main/CounterAI.gd" type="Script" id=21]
->>>>>>> Stashed changes
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 12 )
@@ -229,8 +222,6 @@ script = ExtResource( 7 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-<<<<<<< Updated upstream
-=======
 
 [node name="AddDeck" type="Control" parent="CanvasLayer/HBoxContainer"]
 margin_left = 36.0
@@ -359,4 +350,3 @@ script = ExtResource( 21 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
->>>>>>> Stashed changes

@@ -200,3 +200,5 @@ __meta__ = {
 [connection signal="pressed" from="DrawCardButton" to="." method="_on_DrawCardButton_pressed"]
 [connection signal="pressed" from="Node2D/AIDrawCardButton" to="Node2D" method="_on_AIDrawCardButton_pressed"]
 [connection signal="pressed" from="Node2D/AIEndTurnButton" to="." method="_on_AIEndTurnButton_pressed"]
+[connection signal="pressed" from="BackButton/BackButton" to="." method="_on_BackButton_pressed"]
+[connection signal="pressed" from="BackButton/BackButton" to="Node2D" method="_on_BackButton_pressed"]

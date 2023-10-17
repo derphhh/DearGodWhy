@@ -9,7 +9,6 @@ onready var card_scene = preload("res://Scenes/ui/Cards.tscn")
 var card_instances = []  # Store references to card instances here
 func _ready():
 	connect("pressed", self, "_on_AIDrawCardButton_pressed")
-	print("AI Initial deck: ", aideck)
 func _on_EndTurnButton_pressed():
 	$BlockInput.visible = true
 func _on_AIDrawCardButton_pressed():
@@ -25,7 +24,6 @@ func _on_AIDrawCardButton_pressed():
 		var card_data = load("res://cards/characters/card_" + str(card_id) + ".tres")
 		if card_data:
 			summon_card(card_data)
-			print("Now deck: ", aideck)
 		else:
 			print("Failed to summon card due to invalid data")
 	else:

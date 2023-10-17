@@ -1,0 +1,21 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://Resource/CardResource.gd" type="Script" id=1]
+[ext_resource path="res://assets/textures/Symbols/elemental.png" type="Texture" id=2]
+[ext_resource path="res://assets/textures/Images/cal.jpg" type="Texture" id=3]
+[ext_resource path="res://assets/textures/backgrounds/Green.jpg" type="Texture" id=4]
+
+[resource]
+script = ExtResource( 1 )
+id = 52
+card_name = "Cal Kestis"
+image = ExtResource( 3 )
+cost = 5
+card_type = "Jedi Knight"
+ability1 = "Light Side"
+ability2 = "Dark Side"
+flavor_ability = ""
+damage = 500
+health = 500
+symbol = ExtResource( 2 )
+background = ExtResource( 4 )

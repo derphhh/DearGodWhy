@@ -1,0 +1,21 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://Resource/CardResource.gd" type="Script" id=1]
+[ext_resource path="res://assets/textures/backgrounds/Blue.jpg" type="Texture" id=2]
+[ext_resource path="res://assets/textures/Symbols/mystical.svg" type="Texture" id=3]
+[ext_resource path="res://assets/textures/Images/domino.jpg" type="Texture" id=4]
+
+[resource]
+script = ExtResource( 1 )
+id = 95
+card_name = "Domino"
+image = ExtResource( 4 )
+cost = 4
+card_type = "Mutant - X-Force"
+ability1 = "Dodge"
+ability2 = ""
+flavor_ability = ""
+damage = 100
+health = 1000
+symbol = ExtResource( 3 )
+background = ExtResource( 2 )

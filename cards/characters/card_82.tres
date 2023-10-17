@@ -1,0 +1,21 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://Resource/CardResource.gd" type="Script" id=1]
+[ext_resource path="res://assets/textures/backgrounds/Red.jpg" type="Texture" id=2]
+[ext_resource path="res://assets/textures/Symbols/Physical.png" type="Texture" id=3]
+[ext_resource path="res://assets/textures/Images/darth-vaderleader.jpeg" type="Texture" id=4]
+
+[resource]
+script = ExtResource( 1 )
+id = 82
+card_name = "Darth Vader"
+image = ExtResource( 4 )
+cost = 5
+card_type = "Human - Sith"
+ability1 = "Dark Side"
+ability2 = "Healing"
+flavor_ability = "Rage"
+damage = 400
+health = 600
+symbol = ExtResource( 3 )
+background = ExtResource( 2 )

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://Resource/CardResource.gd" type="Script" id=1]
+[ext_resource path="res://assets/textures/Images/Beebo.jpeg" type="Texture" id=2]
+[ext_resource path="res://assets/textures/backgrounds/Blue.jpg" type="Texture" id=3]
+[ext_resource path="res://assets/textures/Symbols/mystical.svg" type="Texture" id=4]
+
+[resource]
+script = ExtResource( 1 )
+id = 30
+card_name = "Beebo"
+image = ExtResource( 2 )
+cost = 7
+card_type = "God"
+ability1 = "Flame"
+ability2 = "Flight"
+flavor_ability = "Transmutation"
+damage = 700
+health = 900
+symbol = ExtResource( 4 )
+background = ExtResource( 3 )

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://Resource/CardResource.gd" type="Script" id=1]
+[ext_resource path="res://assets/textures/backgrounds/Blue.jpg" type="Texture" id=2]
+[ext_resource path="res://assets/textures/Symbols/mystical.svg" type="Texture" id=3]
+[ext_resource path="res://assets/textures/Images/doctor-fate.jpg" type="Texture" id=4]
+
+[resource]
+script = ExtResource( 1 )
+id = 90
+card_name = "Doctor Fate"
+image = ExtResource( 4 )
+cost = 3
+card_type = "Monster"
+ability1 = "Shield"
+ability2 = "Sorcery"
+flavor_ability = "Teleportation"
+damage = 400
+health = 500
+symbol = ExtResource( 3 )
+background = ExtResource( 2 )

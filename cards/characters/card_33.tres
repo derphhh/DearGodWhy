@@ -1,0 +1,21 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://Resource/CardResource.gd" type="Script" id=1]
+[ext_resource path="res://assets/textures/Images/bishop.jpg" type="Texture" id=2]
+[ext_resource path="res://assets/textures/backgrounds/Blue.jpg" type="Texture" id=3]
+[ext_resource path="res://assets/textures/Symbols/mystical.svg" type="Texture" id=4]
+
+[resource]
+script = ExtResource( 1 )
+id = 33
+card_name = "Bishop"
+image = ExtResource( 2 )
+cost = 4
+card_type = "Mutant - X-Men"
+ability1 = "Drain"
+ability2 = "Power Nullification"
+flavor_ability = "Resource Drain"
+damage = 400
+health = 200
+symbol = ExtResource( 4 )
+background = ExtResource( 3 )
